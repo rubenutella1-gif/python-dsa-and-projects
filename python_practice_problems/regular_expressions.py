@@ -1,0 +1,45 @@
+#import re
+#""" text="I have 123 apples and 456 oranges"
+"""numbers=re.findall('\\d+',text)
+print(numbers)
+clean_text=re.sub(r'\s+',' ',"Too    many    spaces")
+print(clean_text) """
+import re
+text1='''Hello this is python class learning and today class about regular expressions 12328j a abc abb ab abbsc 
+abbbsc abbbc abbbbbbbbc gogle google gooogle the tyhe the
+in python to use regular expressions in python we have to import re module and arrow 12134 
+we can use the methods in regular expressions lets a string contain apple banana  ApplE orange color colour'''
+match=re.findall(r'apple',text1)
+print(match) 
+match2=re.findall(r'apple',text1,re.IGNORECASE)
+print(match2)
+match3=re.findall(r'^hello',text1,re.IGNORECASE)
+print(match3)
+match4=re.findall(r'orange$',text1,re.IGNORECASE)
+print(match4)
+match5=re.findall(r'a...e',text1,re.IGNORECASE)
+print(match5)
+match6=re.findall(r'app[low]e',text1,re.IGNORECASE)
+print(match6)
+numbers=re.findall('\\d+',text1)
+print(numbers)
+match7=re.findall(r'[a-zA-Z]+',text1,re.IGNORECASE)
+print(match7)
+match7=re.findall(r'\s+',text1)
+print(match7)
+match8=re.findall(r'colou?r',text1,)
+print(match8)
+match9=re.findall(r'ab*c',text1)
+print(match9)
+match10=re.findall(r'go+gle',text1)
+print(match10)
+match11=re.findall(r'go{2}gle',text1)
+print(match11)
+match12=re.findall(r'go{1,3}gle',text1)
+print(match12)
+match13=re.findall(r'\bthe\b',text1)
+print(match13)
+match=re.findall(r'\D+',text1)
+print(match)
+match14=re.findall(r'\S+',text1)
+print(match14)

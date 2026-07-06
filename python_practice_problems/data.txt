@@ -1,0 +1,4 @@
+Python is Powerful
+It is easy to learn
+File handling is interesting
+Practice makes perfect

@@ -33,6 +33,7 @@ python/
 * Data Structures and Algorithms (DSA)
 * LeetCode Problem Solutions
 * Mini Python Projects
+* Leetcode_Problems
 
 ## Technologies Used
 

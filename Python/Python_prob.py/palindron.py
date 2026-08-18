@@ -3,5 +3,5 @@ def is_palindron(s):
          print(f"s={s} is palindron")
      else:
          print(f"s ={s} is not polindron")    
-is_palindron("mada")
+is_palindron("madam")
     

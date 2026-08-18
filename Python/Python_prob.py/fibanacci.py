@@ -5,4 +5,3 @@ def is_fibanacci(n):
         a,b=b,a+b  
 n=int(input("Enter a number:"))
 is_fibanacci(n)
-

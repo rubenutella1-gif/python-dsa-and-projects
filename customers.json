@@ -1,0 +1,44 @@
+[
+    {
+        "customer_id": "C101",
+        "name": "Rubenu",
+        "age": 24,
+        "mobile": "8639591117",
+        "address": "Hyderabad",
+        "loans": [
+            {
+                "loan_id": "L101",
+                "loan_amount": 500000.0,
+                "interest_rate": 9.0,
+                "tenure": 9,
+                "emi": 6771.454326568592,
+                "balance": 490867.4843411406,
+                "status": "Active",
+                "paid_months": 3,
+                "repayment_history": [
+                    {
+                        "emi_number": 1,
+                        "emi_amount": 6771.454326568592,
+                        "interest": 3750.0,
+                        "principal": 3021.4543265685916,
+                        "balance": 496978.5456734314
+                    },
+                    {
+                        "emi_number": 2,
+                        "emi_amount": 6771.454326568592,
+                        "interest": 3727.3390925507356,
+                        "principal": 3044.115234017856,
+                        "balance": 493934.4304394136
+                    },
+                    {
+                        "emi_number": 3,
+                        "emi_amount": 6771.454326568592,
+                        "interest": 3704.508228295602,
+                        "principal": 3066.9460982729897,
+                        "balance": 490867.4843411406
+                    }
+                ]
+            }
+        ]
+    }
+]

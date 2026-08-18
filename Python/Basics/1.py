@@ -22,7 +22,7 @@ print(arr1) """
 """ Moving all zeros to end of the array
 arr = [0, 1, 0, 3, 12]
 j=0
-for i in range(0,len(arr)):
+for i in range(0,len(arr)): 
     if arr[i]!=0:
         arr[j]=arr[i]
         j+=1
@@ -64,15 +64,15 @@ print(a,b) """
 """ import random
 n=random.randint(1,10)
 print(n) """
-sum=23
-array=[10,12,13,3,13]
-sub_sum=0
-i=0
+target = 23
+array = [10, 12, 13, 3, 13]
 
-for i in array:
-    for j in range(i+1,len(array)):
-        sub_sum=array[i]+array[j] 
-    i+=1
-    if sub_sum==sum:
-        
-        print(array[i],array[j])
+seen = set()
+
+for num in array:
+    complement = target - num
+
+    if complement in seen:
+        print(complement, num)
+
+    seen.add(num)

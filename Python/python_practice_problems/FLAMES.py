@@ -1,18 +1,37 @@
-name1=input("Enter your first name :").lower()
-name2=input("Enter second name :").lower()
-name1=name1.replace(" ","")
-name2=name2.replace(" ","")
-samechar=[]
-remain=[]
-for i in name1:
-    for j in name2:
-        if i==j:
-            samechar.append(i)
-            samechar.append(j)
-        if i!=j:
-            remain.append(i)
-            remain.append(j)
-samechar=list(set(samechar))
-remain=list(set(remain))
-print(samechar)
-print(remain)
+while True:
+    name1 = input("Enter your first name: ").lower().replace(" ", "")
+    name2 = input("Enter your second name: ").lower().replace(" ", "")
+
+    list1 = list(name1)
+    list2 = list(name2)
+
+    for char in name1:
+        if char in list2:
+            list1.remove(char)
+            list2.remove(char)
+
+    count = len(list1) + len(list2)
+
+    print("Remaining characters:", list1 + list2)
+    print("Count:", count)
+
+    flames = ["F", "L", "A", "M", "E", "S"]
+
+    index = 0
+
+    while len(flames) > 1:
+        index = (index + count - 1) % len(flames)
+        flames.pop(index)
+
+    print("FLAMES result:", flames[0])
+
+    result = {
+        "F": "Friends",
+        "L": "Love",
+        "A": "Affection",
+        "M": "Marriage",
+        "E": "Enemies",
+        "S": "Siblings"
+    }
+
+    print("Relationship:", result[flames[0]])

@@ -6,4 +6,4 @@ def is_prime(n):
             return False
         return True
 n = int(input("Enter a number to check prime number or not: "))    
-print(is_prime(n))    
+print(is_prime(n)) 

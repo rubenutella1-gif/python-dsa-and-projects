@@ -16,5 +16,5 @@ while True:
     print(f"even count in number {even}")
     print(f"odd count in number {odd}")
     choice=input("Do you want to continue Enter your choice (y/n)").lower()
-    if choice=="n":
+    if choice=="n" or "no":
         break
